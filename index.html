@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimi&DHK</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6f446ba34a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="header">
+			<div class="title">
+				<div class="logo"></div>
+				<h1>Dimi&DHK</h1>
+			</div>
+			<div class="description">
+				<p>Elevate Your Space with Professional Painting and Decorating Services - <a href="#contact">Contact Me</a> Today</p>
+			</div>
+    </div>
+  </header>
+  <main> 
+    <section id="about">
+      <h2>About me</h2>
+			<div class="line"></div>
+      <p>
+				Hi. I am Dmitri Paladi a skilled and experienced painter and decorator with a passion for transforming spaces. 
+				With over 5+ years in the industry, 
+				I have honed my skills in interior painting and in wallpapering and am able to complete projects with a high level of precision and attention to detail. 
+				I am well-versed in various techniques and styles, 
+				and I am always up for a challenge. My goal is to deliver a high-quality, 
+				flawless finish that exceeds my clients' expectations. I am reliable, efficient, 
+				and take great pride in my work. Whether it's a small touch-up or a complete renovation, 
+				I am committed to delivering a beautiful and lasting result.
+			</p>
+		</section>
+		<section id="services">
+			<h2>Services</h2>
+			<div class="line"></div>
+			<div class="boxes">
+
+				<div class="box">
+					<div class="img"><img src="img/paint.jpg" alt="paint"></div>
+					<div class="text">
+						<h3>Interior Painting</h3>
+						<p>This service involves the application of paint to the walls, ceilings, 
+							and other surfaces of a room to enhance its aesthetic appeal and protect it from damage.</p>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="img"><img src="img/wallpaper.png" alt="wallpaper"></div>
+					<div class="text">
+						<h3>Wallpapering</h3>
+						<p>Wallpapering is the process of covering the walls with decorative paper to create a unique look and feel. 
+								Wallpaper can be made from a variety of materials and can be plain or patterned.</p>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="img"><img src="img/spray_gun.jpg" alt="Spray"></div>
+					<div class="text">
+						<h3>Spray Painting</h3>
+						<p>Spray painting is a fast and efficient method of applying paint to large surfaces. 
+								This service is ideal for projects that require a smooth, 
+								even finish and fast completion.</p>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="img"><img src="img/wood_paint.jpg" alt="wood painting"></div>
+					<div class="text">
+						<h3>Wood Painting</h3>
+						<p>Wood painting involves the application of paint to wooden surfaces, 
+								such as furniture and cabinetry, 
+								to protect them from damage and improve their appearance.</p>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="img"><img src="img/wood_vanishing.jpg" alt="wood Vanishing"></div>
+					<div class="text">
+						<h3>Wood Vanishing</h3>
+						<p>Wood varnishing is the process of applying a clear, 
+								protective finish to wooden surfaces to protect them from damage and enhance their natural beauty. 
+								This service can be used to revive old, dull surfaces or protect new ones from wear and tear.</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section id="works">
+			<h2>Works</h2>
+			<div class="line"></div>
+			<div class="gallery">
+					<div class="row">
+							<div class="column">
+								<img src="img/img_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+							</div>
+							<div class="column">
+								<img src="img/img_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+							</div>
+							<div class="column">
+								<img src="img/img_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+							</div>
+							<div class="column">
+								<img src="img/img_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+							</div>
+							<div class="column">
+									<img src="img/img_5.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+							</div>
+					</div>
+					<!-- The Modal/Lightbox -->
+					<div id="myModal" class="modal">
+							<span class="close cursor" onclick="closeModal()">&times;</span>
+							<div class="modal-content">
+							<div class="mySlides">
+					      <img src="img/img_1.png" class="img_w">
+							</div>
+							<div class="mySlides">
+					      <img src="img/img_2.png" class="img_w">
+							</div>
+							<div class="mySlides">
+					      <img src="img/img_3.png" class="img_w">
+							</div>
+							<div class="mySlides">
+					      <img src="img/img_4.png" class="img_w">
+							</div>
+							<div class="mySlides">
+					      <img src="img/img_5.jpg" class="img_w">
+							</div>
+					
+							<!-- Next/previous controls -->
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					
+							</div>
+					</div>
+			</div>
+		</section>
+		<section id="contact">
+				<h2>Contact</h2>
+				<div class="line"></div>
+				<div class="contact">
+						<div class="details">
+								<p><i class="fa fa-user"></i>Dmitri Paladi</p>
+								<p><i class="fa fa-phone"></i>+44 7888 123 456</p>
+								<p><i class="fa fa-envelope"></i>name@email.com</p>
+								<p><i class="fa fa-facebook-square"></i>facebook.com/u/user</p>
+						</div>
+						<form>
+							<input class="inputContact" type="text" name="fullName" id="fullName"  placeholder="Full Name" required>
+							<input class="inputContact" type="email" name="email" id="email"  placeholder="Email" required>
+							<input class="inputContact" type="text" name="phoneNumber" id="phoneNumber"  placeholder="Phone Number" required>
+							<button class="inputContact" type="submit" class="pure-button pure-input-1-2 pure-button-primary">Send</button>
+						</form>
+				</div>
+		</section>
+	</main>
+	<footer>
+			<p>Made by Oleg Andronic Copyright 2023</p>
+	</footer>
+	<script src="script.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

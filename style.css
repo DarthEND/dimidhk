@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-size: 16px;
+  background-color: #f7f7f7;
+}
+
+header, main{
+    width: 100%;
+}
+
+/* Header */
+header{
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+   url(img/header_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0px 5px 10px 0px rgba(170, 170, 170, 0.5);
+}
+.header{
+  position: absolute;
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  background-image: url(img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+.header h1{
+  font-size: 4rem;
+}
+.description{
+  line-height: 1.5;
+  width: 100%;
+  margin-top: 1.5rem;
+  font-size: 18px;
+}
+.description a{
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 5px;
+  font-weight: bold;
+}
+.description a:hover{
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Content */
+section{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+h2{
+  font-size: 2.5em;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+.line{
+  max-width: 1000px;
+  width: 100%;
+  height: 5px;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, 
+  rgba(177, 160, 254,1) 0%,
+  rgba(173, 181, 254,0.9) 30%,
+  rgba(160, 235, 255,0.7) 60%,
+  rgba(238, 189, 255,0.5) 80%,
+  rgba(241, 243, 255,0.2) 100%);
+}
+/* About */
+#about p{
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+/* Services */
+.boxes{
+  padding-left: 10px;
+  padding-right: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+.text{
+  background-color: #2980b9;
+  padding: 1rem;
+  color: #fff;
+}
+.text h3{
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.box img{
+  width: 100%;
+}
+/* Works */
+.row{
+  padding-left: 10px;
+  padding-right: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 180px));
+  gap: 15px;
+  justify-items: center;
+}
+.column{
+  border: 1px solid #000; /* need to change color */
+  padding: 10px;
+}
+.row .column img{
+  width: 160px;
+  height: 160px;
+}
+.row .column:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: transparent;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1000px;
+}
+.img_w{
+  object-fit: contain;
+  width: 100%;
+  height: 80vh;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Contact */
+.contact{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 5px;
+  gap: 10px;
+}
+.details p{
+  font-size: 18px;
+}
+.details i{
+  font-size: 20px;
+  padding: 5px;
+}
+.inputContact{
+  display: block;
+  width: 250px;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+footer{
+  text-align: center;
+}
