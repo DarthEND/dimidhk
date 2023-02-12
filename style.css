@@ -7,6 +7,7 @@
 body{
   font-size: 16px;
   background-color: #f7f7f7;
+  font-family: 'Open Sans', sans-serif;
 }
 
 header, main{
@@ -67,6 +68,9 @@ header{
   border: 1px solid #fff;
   padding: 5px;
   font-weight: bold;
+}
+.description p{
+  margin-bottom: 10px;
 }
 .description a:hover{
   background-color: #fff;
