@@ -44,8 +44,14 @@
 			<div class="line"></div>
 			<div class="boxes">
 
+				<!-- add srcset and different image sizes depend of resolution -->
+
 				<div class="box">
-					<div class="img"><img src="img/paint.jpg" alt="paint"></div>
+					<div class="img">
+						<img srcset="img/paint_600w.webp 600w, img/paint_300w.webp 300w"
+						
+						src="img/paint.webp" alt="paint">
+					</div>
 					<div class="text">
 						<h3>Interior Painting</h3>
 						<p>This service involves the application of paint to the walls, ceilings, 
@@ -54,7 +60,7 @@
 				</div>
 
 				<div class="box">
-					<div class="img"><img src="img/wallpaper.png" alt="wallpaper"></div>
+					<div class="img"><img src="img/wallpaper.webp" alt="wallpaper"></div> 
 					<div class="text">
 						<h3>Wallpapering</h3>
 						<p>Wallpapering is the process of covering the walls with decorative paper to create a unique look and feel. 
@@ -63,7 +69,7 @@
 				</div>
 
 				<div class="box">
-					<div class="img"><img src="img/spray_gun.jpg" alt="Spray"></div>
+					<div class="img"><img src="img/spray_gun.webp" alt="Spray"></div>
 					<div class="text">
 						<h3>Spray Painting</h3>
 						<p>Spray painting is a fast and efficient method of applying paint to large surfaces. 
@@ -73,7 +79,7 @@
 				</div>
 
 				<div class="box">
-					<div class="img"><img src="img/wood_paint.jpg" alt="wood painting"></div>
+					<div class="img"><img src="img/wood_paint.webp" alt="wood painting"></div>
 					<div class="text">
 						<h3>Wood Painting</h3>
 						<p>Wood painting involves the application of paint to wooden surfaces, 
@@ -83,7 +89,7 @@
 				</div>
 
 				<div class="box">
-					<div class="img"><img src="img/wood_vanishing.jpg" alt="wood Vanishing"></div>
+					<div class="img"><img src="img/wood_vanishing.webp" alt="wood Vanishing"></div>
 					<div class="text">
 						<h3>Wood Vanishing</h3>
 						<p>Wood varnishing is the process of applying a clear, 
@@ -149,9 +155,9 @@
 				<div class="contact">
 						<div class="details">
 								<p><i class="fa fa-user"></i>Dmitri Paladi</p>
-								<p><i class="fa fa-phone"></i>+44 7888 123 456</p>
-								<p><i class="fa fa-envelope"></i>name@email.com</p>
-								<p><i class="fa fa-facebook-square"></i>facebook.com/u/user</p>
+								<p><i class="fa fa-phone"></i><a href="tel:+447849304821">+44 7849 304 821</a></p>
+								<p><i class="fa fa-envelope"></i><a href="mailto:dimi.dhk@gmail.com">dimi.dhk@gmail.com</a></p>
+								<!-- <p><i class="fa fa-facebook-square"></i>facebook.com/u/user</p> -->
 						</div>
 						<form>
 							<input class="inputContact" type="text" name="fullName" id="fullName"  placeholder="Full Name" required>
@@ -167,6 +173,5 @@
 			<p>Made by Oleg Andronic Copyright 2023</p>
 	</footer>
 	<script src="script.js"></script>
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>

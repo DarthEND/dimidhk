@@ -8,6 +8,7 @@ body{
   font-size: 16px;
   background-color: #f7f7f7;
   font-family: 'Open Sans', sans-serif;
+  color: #30343f;
 }
 
 header, main{
@@ -17,11 +18,13 @@ header, main{
 /* Header */
 header{
   height: 400px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-   url(img/header_bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background:
+    linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+    linear-gradient(30deg, rgba(241,243,255,1) 0%, rgba(241,243,255,0) 30%),
+    linear-gradient(160deg, rgba(164, 237, 254, 1) 0%, rgba(164, 237, 254, 0) 40%),
+    linear-gradient(90deg, rgba(238, 189, 255, 0) 55%, rgba(238, 189, 255, 1) 100%),
+    linear-gradient(180deg, rgba(175, 161, 255, 1) 0%, rgba(175, 161, 255, 0) 70%),
+    linear-gradient(0deg, rgba(175, 161, 255, 1) 0%, rgba(175, 161, 255, 0) 70%);
   position: relative;
   box-shadow: 0px 5px 10px 0px rgba(170, 170, 170, 0.5);
 }
@@ -42,7 +45,7 @@ header{
   justify-content: center;
 }
 .logo{
-  background-image: url(img/logo.png);
+  background-image: url(img/logo.webp);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100px;
@@ -137,21 +140,36 @@ h2{
   padding-left: 10px;
   padding-right: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 180px));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
   justify-items: center;
 }
 .column{
   border: 1px solid #000; /* need to change color */
-  padding: 10px;
+  padding: 5px;
+  border-radius: 5px;
 }
+
 .row .column img{
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
 }
 .row .column:hover{
   transform: scale(1.1);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 350px) {
+  .row{
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  .row .column img{
+    width: 120px;
+    height: 120px;
+  }
 }
 
 /* The Modal (background) */
@@ -245,17 +263,27 @@ h2{
 .details p{
   font-size: 18px;
 }
+.details a{
+  color: #30343f;
+}
 .details i{
   font-size: 20px;
   padding: 5px;
 }
+form{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: center;
+  row-gap: 5px;
+}
 .inputContact{
-  display: block;
-  width: 250px;
-  margin-bottom: 5px;
   padding: 5px;
   font-size: 16px;
 }
 footer{
   text-align: center;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  font-size: 14px;
 }
