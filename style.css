@@ -280,6 +280,17 @@ form{
   padding: 5px;
   font-size: 16px;
 }
+.btn{
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+}
+.btn:hover{
+  cursor: pointer;
+  background: #236d9d;
+}
 footer{
   text-align: center;
   background-color: #2c3e50;
