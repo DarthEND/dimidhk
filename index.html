@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Transform your home or business with professional painting and wallpapering services from Dimi&DHK. Our skilled team can help you select the perfect colors and designs to suit your style and budget. With years of experience and a commitment to quality, we'll make your walls come to life. Contact us today for a free consultation!">
+	<meta name="keywords" content="painting, wallpapering, interior design, home improvement, residential painting, commercial painting,color selection,surface preparation,brush painting,spray painting,wallpaper installation,wallpaper removal,wall repair,drywall repair,texture painting,decorative painting,faux finishes,trim painting,staining,sealing, wood painting, wood vanishing">
 	<title>Dimi&DHK</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -159,9 +161,10 @@
 								<p><i class="fa fa-envelope"></i><a href="mailto:dimi.dhk@gmail.com">dimi.dhk@gmail.com</a></p>
 								<!-- <p><i class="fa fa-facebook-square"></i>facebook.com/u/user</p> -->
 						</div>
-						<form name="contact" method="POST" data-netlify="true">
+						<form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+							<input name="bot-field" style="display: none;">
 							<input class="inputContact" type="text" name="fullName" id="fullName"  placeholder="Full Name" required>
-							<input class="inputContact" type="email" name="email" id="email"  placeholder="Email" required>
+							<input class="inputContact" type ="email" name="email" id="email"  placeholder="Email" required>
 							<input class="inputContact" type="text" name="phoneNumber" id="phoneNumber"  placeholder="Phone Number" required>
 							<textarea name="message" id="msg" cols="30" rows="10"></textarea>
 							<button class="inputContact btn" type="submit">Send</button>
