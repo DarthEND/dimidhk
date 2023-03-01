@@ -44,13 +44,13 @@ header{
   align-items: center;
   justify-content: center;
 }
-.logo{
+/* .logo{
   background-image: url(img/logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100px;
   height: 100px;
-}
+} */
 .header h1{
   font-size: 4rem;
 }
