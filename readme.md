@@ -4,7 +4,7 @@ Simple static website for Dimi&DHK painting and decorating services.
 
 ## Run locally
 
-Open `/tmp/workspace/DarthEND/dimidhk/index.html` in your browser.
+Open `index.html` in your browser from the project root.
 
 ## GitHub Pages
 
